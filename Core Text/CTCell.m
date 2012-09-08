@@ -79,8 +79,7 @@
     CGFloat W = b.size.width;
     CGFloat H = b.size.height;
     
-    ctLayer.frame = b;
-    ctRenderer.size = b.size;
+    
     
     //self.textLabel.backgroundColor = self.detailTextLabel.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.9];
     
@@ -101,6 +100,8 @@
     ctRenderer.ctPath = path;
     CGPathRelease(path);
     
+    ctLayer.frame = b;
+    ctRenderer.size = b.size;
     
     //self.detailTextLabel.frame = CGRectMake(65, b.size.height - 10, b.size.width - 70, 10);
     
