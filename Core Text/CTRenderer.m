@@ -35,6 +35,8 @@
     id identityObject;
     
     CGFloat scale;
+    
+    CGMutablePathRef ctPath;
 }
 
 
@@ -60,6 +62,7 @@
 	//dispatch_release(_renderQueue);
 	if (framesetter != NULL)CFRelease(framesetter);
     if (renderedImage != NULL)CGImageRelease(renderedImage);
+    if (ctPath != NULL)CFRelease(ctPath);
 	[super dealloc];
 }
 
@@ -125,7 +128,19 @@
 
 #pragma mark - Setters overrides:
 
+-(void)setCtPath:(CGMutablePathRef)ctPath_{
 
+    @synchronized(self){
+    
+        if (ctPath != NULL)
+            CFRelease(ctPath);
+        
+        ctPath = (ctPath_);
+        CGPathRetain(ctPath);
+    }
+    
+    
+}
 -(void)setSize:(CGSize)size_{
 
     if (size_.width == size.width && size_.height == size.height) {
@@ -222,31 +237,13 @@
    
     avoided = NO;
     //NSLog(@"RenderGCD text: %@ (lenght: %i)", [_text substringToIndex:MIN(_text.length, 10)], _text.length);
-    
-    
-    CGMutablePathRef path = CGPathCreateMutable();
-
-    CTItem *item = [self.ctItems objectAtIndex:0];
-    CTStyle *style = item.style;
-    
-    CGRect frame;
 
     CGAffineTransform flipVertical = CGAffineTransformMake(1, 0, 0, -1, 0, H);
     
-    
-    frame = CGRectMake(60, 5, W - 65, 55); //  H - style.margin.top
-    //frame = CGRectApplyAffineTransform(frame, flipVertical);
-    CGPathAddRect(path, NULL, frame);
-    frame = CGRectMake(5, 60, W - 10, H - style.margin.top  - 60); //
-    //frame = CGRectApplyAffineTransform(frame, flipVertical);
-    CGPathAddRect(path, NULL, frame);
-    
-    CGPathRef p = CGPathCreateCopyByTransformingPath(path, &flipVertical);
-    CGPathRelease(path);
+    CGPathRef p = CGPathCreateCopyByTransformingPath(ctPath, &flipVertical);
     
     if (ctFrame != NULL)CFRelease(ctFrame);
     ctFrame = CTFramesetterCreateFrame(framesetter,CFRangeMake(0, 0), p, NULL);
-    
     
     
     //CFRange rangeVisible = CTFrameGetVisibleStringRange(ctFrame);
@@ -266,12 +263,12 @@
 	
 	CGContextSaveGState(context);
     
-      /*DEBUG
+     // /*DEBUG
     CGContextAddPath(context, p);
     CGContextSetLineWidth(context, 1.0);
     CGContextSetStrokeColorWithColor(context, [UIColor colorWithWhite:0.0 alpha:0.3].CGColor);
     CGContextStrokePath(context);
-     */
+    // */
     
 	//
 	CTFrameDraw(ctFrame, context);

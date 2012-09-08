@@ -32,6 +32,7 @@
 @property (nonatomic, readonly) NSString *selector;
 @property (nonatomic, readonly) BOOL avoided;
 @property (nonatomic) CGFloat scale;
+@property (atomic) CGMutablePathRef ctPath;
 
 -(id)initWithSize:(CGSize)size;
 -(void)reset;

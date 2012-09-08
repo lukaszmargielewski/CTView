@@ -76,6 +76,8 @@
     [super layoutSubviews];
 
     CGRect b = self.contentView.bounds;
+    CGFloat W = b.size.width;
+    CGFloat H = b.size.height;
     
     ctLayer.frame = b;
     ctRenderer.size = b.size;
@@ -84,6 +86,21 @@
     
     self.textLabel.frame = CGRectMake(5, b.size.height - 10, 60, 10);
     self.imageView.frame = CGRectMake(5, 5, 50, 50);
+    
+    CGMutablePathRef path = CGPathCreateMutable();
+    CGPathMoveToPoint(path, NULL, 60, 5);
+    CGPathAddLineToPoint(path, NULL, W - 5, 5);
+    CGPathAddLineToPoint(path, NULL, W - 5, H - 65);
+    CGPathAddLineToPoint(path, NULL, W - 65, H - 5);
+    
+    CGPathAddLineToPoint(path, NULL, 5, H - 5);
+    CGPathAddLineToPoint(path, NULL, 5, 60);
+    CGPathAddLineToPoint(path, NULL, 60, 60);
+    CGPathAddLineToPoint(path, NULL, 60, 5);
+    
+    ctRenderer.ctPath = path;
+    CGPathRelease(path);
+    
     
     //self.detailTextLabel.frame = CGRectMake(65, b.size.height - 10, b.size.width - 70, 10);
     
