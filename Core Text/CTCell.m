@@ -12,6 +12,8 @@
 
     CTRenderer *ctRenderer;
     CALayer *ctLayer;
+    CAShapeLayer *shapeLayer;
+    
     
 }
 @synthesize ctRenderer;
@@ -37,7 +39,17 @@
         ctLayer.contentsScale = [[UIScreen mainScreen] scale];
         ctRenderer.scale = ctLayer.contentsScale;
         
+        shapeLayer = [CAShapeLayer layer];
+        shapeLayer.backgroundColor = [UIColor clearColor].CGColor;
+        shapeLayer.fillColor = [UIColor lightGrayColor].CGColor;
+        shapeLayer.frame = b;
+        //shapeLayer.borderWidth = 1.0;
+        //shapeLayer.borderColor = [UIColor lightGrayColor].CGColor;
+        
+        
         [self.contentView.layer addSublayer:ctLayer];
+        [self.contentView.layer addSublayer:shapeLayer];
+        
         
         self.textLabel.font = [UIFont systemFontOfSize:10];
         self.textLabel.textColor = [UIColor colorWithWhite:1.0 alpha:1.0];
@@ -100,7 +112,20 @@
     ctRenderer.ctPath = path;
     CGPathRelease(path);
     
+    
+    path = CGPathCreateMutable();
+    
+    CGPathMoveToPoint(path, NULL, W - 60, H - 5);
+    CGPathAddLineToPoint(path, NULL, W - 5, H - 60);
+    CGPathAddLineToPoint(path, NULL, W - 5, H - 5);
+    CGPathAddLineToPoint(path, NULL, W - 60, H - 5);
+    
+    
+    shapeLayer.path = path;
+    CGPathRelease(path);
+    
     ctLayer.frame = b;
+    shapeLayer.frame = b;
     ctRenderer.size = b.size;
     
     //self.detailTextLabel.frame = CGRectMake(65, b.size.height - 10, b.size.width - 70, 10);
