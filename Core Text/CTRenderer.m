@@ -263,12 +263,12 @@
 	
 	CGContextSaveGState(context);
     
-     // /*DEBUG
+      /*DEBUG
     CGContextAddPath(context, p);
     CGContextSetLineWidth(context, 1.0);
     CGContextSetStrokeColorWithColor(context, [UIColor colorWithWhite:0.0 alpha:0.3].CGColor);
     CGContextStrokePath(context);
-    // */
+     */
     
 	//
 	CTFrameDraw(ctFrame, context);

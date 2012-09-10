@@ -41,11 +41,13 @@
         
         shapeLayer = [CAShapeLayer layer];
         shapeLayer.backgroundColor = [UIColor clearColor].CGColor;
-        shapeLayer.fillColor = [UIColor lightGrayColor].CGColor;
+        shapeLayer.fillColor = [UIColor clearColor].CGColor;
+        shapeLayer.lineWidth = 1.0;
+        shapeLayer.lineJoin = kCALineCapRound;
         shapeLayer.frame = b;
         //shapeLayer.borderWidth = 1.0;
-        //shapeLayer.borderColor = [UIColor lightGrayColor].CGColor;
-        
+//        shapeLayer.borderColor = [UIColor lightGrayColor].CGColor;
+        shapeLayer.strokeColor = [UIColor lightGrayColor].CGColor;
         
         [self.contentView.layer addSublayer:ctLayer];
         [self.contentView.layer addSublayer:shapeLayer];
