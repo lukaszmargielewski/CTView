@@ -6,7 +6,7 @@
 		<key>firstLineIndent</key>
 		<real>0</real>
 		<key>font</key>
-		<string>STHeitiK-Medium|1.6</string>
+		<string>SignaColumn-Book|1.6</string>
 		<key>fontColor</key>
 		<string>{0.3, 0.3, 0.3,1.0}</string>
 		<key>lineBreakMode</key>
@@ -36,7 +36,7 @@
 		<key>firstLineIndent</key>
 		<real>0</real>
 		<key>font</key>
-		<string>STHeitiK-Medium|1.4</string>
+		<string>SignaColumn-Book|1.4</string>
 		<key>fontColor</key>
 		<string>{0.5,0.5,0.5,1.0}</string>
 		<key>lineBreakMode</key>
@@ -66,7 +66,7 @@
 		<key>firstLineIndent</key>
 		<real>0</real>
 		<key>font</key>
-		<string>STHeitiK-Medium|1</string>
+		<string>SignaColumn-Book|1</string>
 		<key>fontColor</key>
 		<string>#000000</string>
 		<key>lineBreakMode</key>
@@ -96,7 +96,7 @@
 		<key>firstLineIndent</key>
 		<real>20</real>
 		<key>font</key>
-		<string>STHeitiK-Medium|1</string>
+		<string>SignaColumn-Book|1</string>
 		<key>fontColor</key>
 		<string>{0.0,0.0,0.0,1.0}</string>
 		<key>lineBreakMode</key>
@@ -126,7 +126,7 @@
 		<key>firstLineIndent</key>
 		<real>0</real>
 		<key>font</key>
-		<string>STHeitiK-Medium|1</string>
+		<string>SignaColumn-Book|1</string>
 		<key>fontColor</key>
 		<string>{0.0,1.0,1.0,1.0}</string>
 		<key>lineBreakMode</key>

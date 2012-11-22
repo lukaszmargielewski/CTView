@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80E62FE1165E71360033FA76 /* GarageGothic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80E62FDE165E71360033FA76 /* GarageGothic-Bold.ttf */; };
+		80E62FE2165E71360033FA76 /* SignaColumn-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80E62FDF165E71360033FA76 /* SignaColumn-Book.ttf */; };
+		80E62FE3165E71360033FA76 /* SignaColumn-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80E62FE0165E71360033FA76 /* SignaColumn-Light.ttf */; };
 		B236DB8C15F7F0DD00F4435B /* ctstyles.plist in Resources */ = {isa = PBXBuildFile; fileRef = B23D762315F3AC370058F74C /* ctstyles.plist */; };
 		B23D75FB15F3AC240058F74C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23D75FA15F3AC240058F74C /* UIKit.framework */; };
 		B23D75FD15F3AC240058F74C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23D75FC15F3AC240058F74C /* Foundation.framework */; };
@@ -50,6 +53,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80E62FDE165E71360033FA76 /* GarageGothic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GarageGothic-Bold.ttf"; sourceTree = "<group>"; };
+		80E62FDF165E71360033FA76 /* SignaColumn-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignaColumn-Book.ttf"; sourceTree = "<group>"; };
+		80E62FE0165E71360033FA76 /* SignaColumn-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignaColumn-Light.ttf"; sourceTree = "<group>"; };
 		B23D75F615F3AC240058F74C /* CTLayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTLayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B23D75FA15F3AC240058F74C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B23D75FC15F3AC240058F74C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -189,6 +195,9 @@
 		B23D760115F3AC240058F74C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				80E62FDE165E71360033FA76 /* GarageGothic-Bold.ttf */,
+				80E62FDF165E71360033FA76 /* SignaColumn-Book.ttf */,
+				80E62FE0165E71360033FA76 /* SignaColumn-Light.ttf */,
 				B23F8B3D15FC01AD002648DF /* abstract.png */,
 				B23F8B3B15FC0155002648DF /* btf.png */,
 				B2BA56E115F536290016BD16 /* marta.jpg */,
@@ -337,6 +346,9 @@
 				B23F8B3E15FC01AD002648DF /* abstract.png in Resources */,
 				B2A3C4AD15FE847E00D62B5F /* LICENSE in Resources */,
 				B2A3C4AE15FE847E00D62B5F /* README.md in Resources */,
+				80E62FE1165E71360033FA76 /* GarageGothic-Bold.ttf in Resources */,
+				80E62FE2165E71360033FA76 /* SignaColumn-Book.ttf in Resources */,
+				80E62FE3165E71360033FA76 /* SignaColumn-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

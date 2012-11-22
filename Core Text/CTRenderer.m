@@ -186,7 +186,7 @@
 	
 	
     
-    dispatch_async([self renderQueue], ^{
+   // dispatch_async([self renderQueue], ^{
 
         NSTimeInterval rt = 0;
         
@@ -215,7 +215,7 @@
         });
         
     }
-    });
+   // });
 	
 }
 -(void)renderGCD{
