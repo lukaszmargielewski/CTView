@@ -39,7 +39,7 @@
     static CTLMStylesManager *shared = nil;
     
     dispatch_once(&done, ^{
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"ctstyles.plist" ofType:@"plist"];
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"ctlmstyles.plist" ofType:@"plist"];
         shared = [[CTLMStylesManager alloc] initFromSource:filePath];
         
     });
