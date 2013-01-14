@@ -6,13 +6,13 @@
 //
 //
 
-#import "CTStylesManager.h"
+#import "CTLMStylesManager.h"
 #import "UIColor-Expanded.h"
 
 #define DEFAULT_FONT_SIZE 12.0
 
 
-@implementation CTStylesManager{
+@implementation CTLMStylesManager{
 
     NSString *stylesFile;
     
@@ -33,14 +33,14 @@
     [bookDirectory  release];
     [super dealloc];
 }
-+(CTStylesManager *)defaultManager {
++(CTLMStylesManager *)defaultManager {
     
     static dispatch_once_t done;
-    static CTStylesManager *shared = nil;
+    static CTLMStylesManager *shared = nil;
     
     dispatch_once(&done, ^{
         NSString *filePath = [[NSBundle mainBundle] pathForResource:@"ctstyles.plist" ofType:@"plist"];
-        shared = [[CTStylesManager alloc] initFromSource:filePath];
+        shared = [[CTLMStylesManager alloc] initFromSource:filePath];
         
     });
     return shared;
@@ -63,21 +63,21 @@
 
 
 #pragma mark - Style retrieving:
--(CTStyle *)style:(NSString *)name{
+-(CTLMStyle *)style:(NSString *)name{
 
     return [self styleForName:name optionalInitialValues:nil];
 }
 
--(CTStyle *)styleForName:(NSString *)styleName optionalInitialValues:(NSDictionary *)initialDictionary{
+-(CTLMStyle *)styleForName:(NSString *)styleName optionalInitialValues:(NSDictionary *)initialDictionary{
     
 	
-	CTStyle *ctStyle = [self.styles objectForKey:styleName];
+	CTLMStyle *ctStyle = [self.styles objectForKey:styleName];
 	
 	if (!ctStyle) {
         
 		if (initialDictionary) {
           
-			ctStyle = [CTStyle styleWithDictionary:initialDictionary];
+			ctStyle = [CTLMStyle styleWithDictionary:initialDictionary];
             [self.styles setObject:ctStyle forKey:styleName];
 		}
 		
@@ -121,7 +121,7 @@
 
             NSString *key = [style valueForKey:@"name"];
             
-			CTStyle *ctstyle = [CTStyle styleWithDictionary:style];
+			CTLMStyle *ctstyle = [CTLMStyle styleWithDictionary:style];
             [self.styles setObject:ctstyle forKey:key];
     
 			

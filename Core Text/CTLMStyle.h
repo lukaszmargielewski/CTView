@@ -18,11 +18,11 @@ enum{
 };
 typedef uint8_t CTTextTransform;
 
-@protocol CTStyleDataSource;
+@protocol CTLMStyleDataSource;
 
-@interface CTStyle : NSObject{
+@interface CTLMStyle : NSObject{
 
-	CTStyle *parent;
+	CTLMStyle *parent;
 	NSMutableArray *children;
 	
     CGFloat fontSize;
@@ -46,7 +46,7 @@ typedef uint8_t CTTextTransform;
     CTFontRef font;
     CGColorRef color;
 	
-	id<CTStyleDataSource>dataSource;
+	id<CTLMStyleDataSource>dataSource;
 	
 }
 
@@ -68,10 +68,10 @@ typedef uint8_t CTTextTransform;
 @property (nonatomic) CGColorRef color;
 
 
-@property (nonatomic, assign) id<CTStyleDataSource>dataSource;
+@property (nonatomic, assign) id<CTLMStyleDataSource>dataSource;
 @property (nonatomic, retain) NSString	*name;
 @property (nonatomic, retain) NSString *fontColorString, *fontString;
-@property (nonatomic, retain) CTStyle *parent;
+@property (nonatomic, retain) CTLMStyle *parent;
 @property (nonatomic, readonly) NSMutableArray *children;
 
 + (id)defaultStyle;
@@ -82,9 +82,9 @@ typedef uint8_t CTTextTransform;
 
 @end
 
-@protocol CTStyleDataSource <NSObject>
+@protocol CTLMStyleDataSource <NSObject>
 
--(NSUInteger)ctStyle:(CTStyle *)ctStyle indexForFontString:(NSString *)fontString;
--(NSUInteger)ctStyle:(CTStyle *)ctStyle indexForColorString:(NSString *)colorString;
+-(NSUInteger)ctStyle:(CTLMStyle *)ctStyle indexForFontString:(NSString *)fontString;
+-(NSUInteger)ctStyle:(CTLMStyle *)ctStyle indexForColorString:(NSString *)colorString;
 
 @end

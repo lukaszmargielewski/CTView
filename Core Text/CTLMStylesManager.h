@@ -7,20 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CTConstants.h"
-#import "CTStyle.h"
+#import "CTLMStyle.h"
 
-@interface CTStylesManager : NSObject{
+@interface CTLMStylesManager : NSObject{
 
 }
 @property (nonatomic, readonly) NSString *bookDirectory;
 @property (nonatomic, readonly) NSMutableDictionary *styles;
 
-+(CTStylesManager *)defaultManager;
++(CTLMStylesManager *)defaultManager;
 -(id)initFromSource:(NSString *)stylesSource;
 
--(CTStyle *)style:(NSString *)name;
--(CTStyle *)styleForName:(NSString *)styleName optionalInitialValues:(NSDictionary *)initialDictionary;
+-(CTLMStyle *)style:(NSString *)name;
+-(CTLMStyle *)styleForName:(NSString *)styleName optionalInitialValues:(NSDictionary *)initialDictionary;
 
 @end
 

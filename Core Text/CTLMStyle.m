@@ -6,12 +6,12 @@
 //  Copyright 2011 Fuerte International. All rights reserved.
 //
 
-#import "CTStyle.h"
+#import "CTLMStyle.h"
 #import "UIColor-Expanded.h"
 
 #define FONT_SIZE_BASE 12.0
 
-@implementation CTStyle
+@implementation CTLMStyle
 @synthesize name;
 @synthesize parent, children;
 
@@ -99,11 +99,11 @@
 	return self;
 }
 + (id)defaultStyle {
-    CTStyle *style = [[CTStyle alloc] init];
+    CTLMStyle *style = [[CTLMStyle alloc] init];
     return [style autorelease];
 }
 + (id)styleWithName:(NSString *)name {
-    CTStyle *style = [[CTStyle alloc] init];
+    CTLMStyle *style = [[CTLMStyle alloc] init];
     [style setName:name];
     return [style autorelease];
 }
@@ -179,7 +179,7 @@
 	////NSLog(@"styleWithDictionary: %@", dictionary);
 	NSString *name  = [dictionary valueForKey:@"name"];
 	
-	CTStyle *style = [CTStyle styleWithName:name];
+	CTLMStyle *style = [CTLMStyle styleWithName:name];
     
 	style.fontString  = [dictionary valueForKey:@"font"];
 	style.fontColorString = [dictionary valueForKey:@"fontColor"];

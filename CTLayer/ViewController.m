@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "CTCell.h"
+#import "CTLMCell.h"
 
 @interface ViewController ()
 
@@ -40,10 +40,10 @@
 
     static NSString *cid = @"cid";
     
-    CTCell *cell = [tableView dequeueReusableCellWithIdentifier:cid];
+    CTLMCell *cell = [tableView dequeueReusableCellWithIdentifier:cid];
     
     if (!cell) {
-        cell = [[[CTCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cid] autorelease];
+        cell = [[[CTLMCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cid] autorelease];
  //       cell.ctRenderer.delegate = self;
     }
     

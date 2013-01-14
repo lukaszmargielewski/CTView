@@ -6,11 +6,11 @@
 //
 //
 
-#import "CTCell.h"
+#import "CTLMCell.h"
 
-@implementation CTCell{
+@implementation CTLMCell{
 
-    CTRenderer *ctRenderer;
+    CTLMRenderer *ctRenderer;
     CALayer *ctLayer;
     CAShapeLayer *shapeLayer;
     
@@ -30,7 +30,7 @@
     
         // Initialization code
         CGRect b = self.contentView.bounds;
-        ctRenderer = [[CTRenderer alloc] initWithSize:b.size];
+        ctRenderer = [[CTLMRenderer alloc] initWithSize:b.size];
         ctRenderer.delegate = self;
         ctLayer = [CALayer layer];
         ctLayer.frame = b;
@@ -77,7 +77,7 @@
 
     // Configure the view for the selected state
 }
--(void)ctRenderer:(CTRenderer *)renderer finishedRenderingWithTime:(NSTimeInterval)time attributedStringRecreationTime:(NSTimeInterval)recreationTime{
+-(void)ctRenderer:(CTLMRenderer *)renderer finishedRenderingWithTime:(NSTimeInterval)time attributedStringRecreationTime:(NSTimeInterval)recreationTime{
 
     ctLayer.contents = (id)renderer.renderedImage;
    // self.detailTextLabel.text = [NSString stringWithFormat:@"rtime: %.5f | attr_rt: %.5f | %@ | av: %i", time, recreationTime, renderer.selector, renderer.avoided];

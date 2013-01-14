@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "CTItem.h"
+#import "CTLMItem.h"
 
-@implementation CTItem
+@implementation CTLMItem
 @synthesize parent, previous, children;
 @synthesize style;
 @synthesize dataSource;
@@ -49,7 +49,7 @@ BOOL pageBreakAfter;
 }
 + (id)defaultItem{
 	
-    CTItem *item = [[CTItem alloc] init];
+    CTLMItem *item = [[CTLMItem alloc] init];
 	
     return [item autorelease];
 }

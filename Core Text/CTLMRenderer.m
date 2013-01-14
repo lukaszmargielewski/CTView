@@ -5,11 +5,11 @@
 //  Created by Lukasz Margielewski on 11/6/11.
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 
-#import "CTRenderer.h"
-#import "CTStylesManager.h"
+#import "CTLMRenderer.h"
+#import "CTLMStylesManager.h"
 #define CTDEBUG YES
 
-@implementation CTRenderer{
+@implementation CTLMRenderer{
 
     CGSize size;
     CGSize renderedSize;
@@ -31,7 +31,7 @@
 
     NSString *selector;
     
-    id<CTRendererDelegate>delegate;
+    id<CTLMRendererDelegate>delegate;
     id identityObject;
     
     CGFloat scale;
@@ -70,7 +70,7 @@
 
 -(dispatch_queue_t)renderQueue{
 
-    return [CTRenderer renderQueue];
+    return [CTLMRenderer renderQueue];
     return _renderQueue;
 }
 +(dispatch_queue_t)renderQueue {
@@ -332,9 +332,9 @@
     // Style attributed string:
     {
         // Loop throught content descriptor:
-        for (CTItem *item in self.ctItems) {
+        for (CTLMItem *item in self.ctItems) {
             
-            CTStyle *style = item.style;
+            CTLMStyle *style = item.style;
             
             
             {
@@ -415,8 +415,8 @@
         __block NSString *sn = styleName;
         
     
-        CTItem *prevItem = [self.ctItems lastObject];
-        CTStyle *prevStyle = prevItem.style;
+        CTLMItem *prevItem = [self.ctItems lastObject];
+        CTLMStyle *prevStyle = prevItem.style;
         
         
         BOOL is_page_break = [elementName isEqualToString:@"pagebreak"];
@@ -438,8 +438,8 @@
             
         }
         
-        CTItem *item = [CTItem defaultItem];
-        CTStyle *style = [[CTStylesManager defaultManager] styleForName:sn optionalInitialValues:extras];
+        CTLMItem *item = [CTLMItem defaultItem];
+        CTLMStyle *style = [[CTLMStylesManager defaultManager] styleForName:sn optionalInitialValues:extras];
         item.style = style;
         
         

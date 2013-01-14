@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CTRenderer.h"
+#import "CTLMRenderer.h"
 
-@interface ViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, CTRendererDelegate>
+@interface ViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, CTLMRendererDelegate>
 @property (nonatomic, assign) IBOutlet UITableView *table;
 
 @end

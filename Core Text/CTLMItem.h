@@ -21,20 +21,20 @@ typedef enum QuartzItemType{
 
 
 
-#import "CTStyle.h"
+#import "CTLMStyle.h"
 
-@protocol CTItemDatasource;
+@protocol CTLMItemDatasource;
 
 
-@interface CTItem : NSObject{
+@interface CTLMItem : NSObject{
 
 	
-	CTItem          *parent;
-	CTItem          *previous;
+	CTLMItem          *parent;
+	CTLMItem          *previous;
     
 	NSMutableArray *children;
 	
-	CTStyle *style;
+	CTLMStyle *style;
 	
 	QuartzItemType		type;
 	NSRange             range;
@@ -42,7 +42,7 @@ typedef enum QuartzItemType{
 	
 	BOOL pageBreakAfter;
 
-	id<CTItemDatasource>dataSource;
+	id<CTLMItemDatasource>dataSource;
 	
 	NSString *url;
 }
@@ -50,12 +50,12 @@ typedef enum QuartzItemType{
 @property (nonatomic, readonly) NSString *typeName;
 @property (nonatomic, retain) NSString *url;
 
-@property (nonatomic, assign) id<CTItemDatasource>dataSource;
-@property (nonatomic, retain) CTItem *parent;
-@property (nonatomic, retain) CTItem *previous;
+@property (nonatomic, assign) id<CTLMItemDatasource>dataSource;
+@property (nonatomic, retain) CTLMItem *parent;
+@property (nonatomic, retain) CTLMItem *previous;
 @property (nonatomic, readonly) NSMutableArray *children;
 
-@property (nonatomic, retain) CTStyle *style;
+@property (nonatomic, retain) CTLMStyle *style;
 
 @property (nonatomic) QuartzItemType type;
 @property (nonatomic) NSRange		range;
@@ -65,9 +65,9 @@ typedef enum QuartzItemType{
 @end
 
 
-@protocol CTItemDataSource <NSObject>
+@protocol CTLMItemDataSource <NSObject>
 
--(NSUInteger)ctItem:(CTItem *)ctItem indexForCTStyle:(CTStyle *)ctStyle;
+-(NSUInteger)ctItem:(CTLMItem *)ctItem indexForCTStyle:(CTLMStyle *)ctStyle;
 
 
 @end

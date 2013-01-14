@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "CoreText/CoreText.h"
 
-@class CTItem;
+@class CTLMItem;
 
-@interface CTPage : NSObject{
+@interface CTLMPage : NSObject{
 
 	NSUInteger index;
 	CGRect frame;

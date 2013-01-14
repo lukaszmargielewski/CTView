@@ -6,20 +6,19 @@
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "CTPage.h"
-#import "CTItem.h"
-#import "CTStylesManager.h"
+#import "CTLMItem.h"
+#import "CTLMStylesManager.h"
 
 #import <QuartzCore/QuartzCore.h>
 
-@class CTRenderer;
+@class CTLMRenderer;
 
-@protocol CTRendererDelegate <NSObject>
+@protocol CTLMRendererDelegate <NSObject>
 
--(void)ctRenderer:(CTRenderer *)renderer finishedRenderingWithTime:(NSTimeInterval)time attributedStringRecreationTime:(NSTimeInterval)recreationTime;
+-(void)ctRenderer:(CTLMRenderer *)renderer finishedRenderingWithTime:(NSTimeInterval)time attributedStringRecreationTime:(NSTimeInterval)recreationTime;
 
 @end
-@interface CTRenderer : NSObject
+@interface CTLMRenderer : NSObject
 
 @property (atomic) CGSize size;
 @property (nonatomic, retain) UIColor *backgroundColor;
@@ -27,7 +26,7 @@
 
 @property (nonatomic, readonly) NSMutableArray *ctItems;
 @property (atomic, retain) id identityObject;
-@property (nonatomic, assign) id<CTRendererDelegate>delegate;
+@property (nonatomic, assign) id<CTLMRendererDelegate>delegate;
 
 @property (nonatomic, readonly) NSString *selector;
 @property (nonatomic, readonly) BOOL avoided;

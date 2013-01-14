@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80B0015716A4B03900EF3E8C /* ctlmstyles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80B0015616A4B03900EF3E8C /* ctlmstyles.plist */; };
+		80B0015916A4B0A600EF3E8C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80B0015816A4B0A600EF3E8C /* Default-568h@2x.png */; };
 		80E62FE1165E71360033FA76 /* GarageGothic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80E62FDE165E71360033FA76 /* GarageGothic-Bold.ttf */; };
 		80E62FE2165E71360033FA76 /* SignaColumn-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80E62FDF165E71360033FA76 /* SignaColumn-Book.ttf */; };
 		80E62FE3165E71360033FA76 /* SignaColumn-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80E62FE0165E71360033FA76 /* SignaColumn-Light.ttf */; };
-		B236DB8C15F7F0DD00F4435B /* ctstyles.plist in Resources */ = {isa = PBXBuildFile; fileRef = B23D762315F3AC370058F74C /* ctstyles.plist */; };
 		B23D75FB15F3AC240058F74C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23D75FA15F3AC240058F74C /* UIKit.framework */; };
 		B23D75FD15F3AC240058F74C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23D75FC15F3AC240058F74C /* Foundation.framework */; };
 		B23D75FF15F3AC240058F74C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23D75FE15F3AC240058F74C /* CoreGraphics.framework */; };
@@ -19,12 +20,12 @@
 		B23D760B15F3AC250058F74C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D760A15F3AC250058F74C /* AppDelegate.m */; };
 		B23D760E15F3AC250058F74C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D760D15F3AC250058F74C /* ViewController.m */; };
 		B23D761115F3AC250058F74C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23D760F15F3AC250058F74C /* ViewController.xib */; };
-		B23D762815F3AC370058F74C /* CTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D761915F3AC370058F74C /* CTCell.m */; };
-		B23D762915F3AC370058F74C /* CTItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D761C15F3AC370058F74C /* CTItem.m */; };
-		B23D762A15F3AC370058F74C /* CTRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D761E15F3AC370058F74C /* CTRenderer.m */; };
-		B23D762B15F3AC370058F74C /* CTPage.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D762015F3AC370058F74C /* CTPage.m */; };
-		B23D762C15F3AC370058F74C /* CTStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D762215F3AC370058F74C /* CTStyle.m */; };
-		B23D762E15F3AC370058F74C /* CTStylesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D762515F3AC370058F74C /* CTStylesManager.m */; };
+		B23D762815F3AC370058F74C /* CTLMCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D761915F3AC370058F74C /* CTLMCell.m */; };
+		B23D762915F3AC370058F74C /* CTLMItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D761C15F3AC370058F74C /* CTLMItem.m */; };
+		B23D762A15F3AC370058F74C /* CTLMRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D761E15F3AC370058F74C /* CTLMRenderer.m */; };
+		B23D762B15F3AC370058F74C /* CTLMPage.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D762015F3AC370058F74C /* CTLMPage.m */; };
+		B23D762C15F3AC370058F74C /* CTLMStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D762215F3AC370058F74C /* CTLMStyle.m */; };
+		B23D762E15F3AC370058F74C /* CTLMStylesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D762515F3AC370058F74C /* CTLMStylesManager.m */; };
 		B23D763515F3AD490058F74C /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D763315F3AD490058F74C /* UIColor-Expanded.m */; };
 		B23D763915F3AD6C0058F74C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23D763815F3AD6C0058F74C /* QuartzCore.framework */; };
 		B23D763B15F3ADDB0058F74C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23D763A15F3ADDA0058F74C /* CoreText.framework */; };
@@ -53,6 +54,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80B0015616A4B03900EF3E8C /* ctlmstyles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ctlmstyles.plist; sourceTree = "<group>"; };
+		80B0015816A4B0A600EF3E8C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		80E62FDE165E71360033FA76 /* GarageGothic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GarageGothic-Bold.ttf"; sourceTree = "<group>"; };
 		80E62FDF165E71360033FA76 /* SignaColumn-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignaColumn-Book.ttf"; sourceTree = "<group>"; };
 		80E62FE0165E71360033FA76 /* SignaColumn-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignaColumn-Light.ttf"; sourceTree = "<group>"; };
@@ -69,24 +72,22 @@
 		B23D760C15F3AC250058F74C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B23D760D15F3AC250058F74C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B23D761015F3AC250058F74C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		B23D761815F3AC370058F74C /* CTCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCell.h; sourceTree = "<group>"; };
-		B23D761915F3AC370058F74C /* CTCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCell.m; sourceTree = "<group>"; };
-		B23D761A15F3AC370058F74C /* CTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTConstants.h; sourceTree = "<group>"; };
-		B23D761B15F3AC370058F74C /* CTItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTItem.h; sourceTree = "<group>"; };
-		B23D761C15F3AC370058F74C /* CTItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTItem.m; sourceTree = "<group>"; };
-		B23D761E15F3AC370058F74C /* CTRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRenderer.m; sourceTree = "<group>"; };
-		B23D761F15F3AC370058F74C /* CTPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPage.h; sourceTree = "<group>"; };
-		B23D762015F3AC370058F74C /* CTPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPage.m; sourceTree = "<group>"; };
-		B23D762115F3AC370058F74C /* CTStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTStyle.h; sourceTree = "<group>"; };
-		B23D762215F3AC370058F74C /* CTStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTStyle.m; sourceTree = "<group>"; };
-		B23D762315F3AC370058F74C /* ctstyles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ctstyles.plist; sourceTree = "<group>"; };
-		B23D762415F3AC370058F74C /* CTStylesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTStylesManager.h; sourceTree = "<group>"; };
-		B23D762515F3AC370058F74C /* CTStylesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTStylesManager.m; sourceTree = "<group>"; };
+		B23D761815F3AC370058F74C /* CTLMCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTLMCell.h; sourceTree = "<group>"; };
+		B23D761915F3AC370058F74C /* CTLMCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTLMCell.m; sourceTree = "<group>"; };
+		B23D761B15F3AC370058F74C /* CTLMItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTLMItem.h; sourceTree = "<group>"; };
+		B23D761C15F3AC370058F74C /* CTLMItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTLMItem.m; sourceTree = "<group>"; };
+		B23D761E15F3AC370058F74C /* CTLMRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTLMRenderer.m; sourceTree = "<group>"; };
+		B23D761F15F3AC370058F74C /* CTLMPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTLMPage.h; sourceTree = "<group>"; };
+		B23D762015F3AC370058F74C /* CTLMPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTLMPage.m; sourceTree = "<group>"; };
+		B23D762115F3AC370058F74C /* CTLMStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTLMStyle.h; sourceTree = "<group>"; };
+		B23D762215F3AC370058F74C /* CTLMStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTLMStyle.m; sourceTree = "<group>"; };
+		B23D762415F3AC370058F74C /* CTLMStylesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTLMStylesManager.h; sourceTree = "<group>"; };
+		B23D762515F3AC370058F74C /* CTLMStylesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTLMStylesManager.m; sourceTree = "<group>"; };
 		B23D763315F3AD490058F74C /* UIColor-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Expanded.m"; sourceTree = "<group>"; };
 		B23D763415F3AD490058F74C /* UIColor-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor-Expanded.h"; sourceTree = "<group>"; };
 		B23D763815F3AD6C0058F74C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B23D763A15F3ADDA0058F74C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		B23F8B3315FBD704002648DF /* CTRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTRenderer.h; sourceTree = "<group>"; };
+		B23F8B3315FBD704002648DF /* CTLMRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTLMRenderer.h; sourceTree = "<group>"; };
 		B23F8B3415FBDAD7002648DF /* CTImageRenderingLookup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTImageRenderingLookup.h; sourceTree = "<group>"; };
 		B23F8B3B15FC0155002648DF /* btf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btf.png; sourceTree = "<group>"; };
 		B23F8B3D15FC01AD002648DF /* abstract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abstract.png; sourceTree = "<group>"; };
@@ -150,6 +151,7 @@
 		B23D75EB15F3AC240058F74C = {
 			isa = PBXGroup;
 			children = (
+				80B0015816A4B0A600EF3E8C /* Default-568h@2x.png */,
 				B2A3C4B015FE849E00D62B5F /* AFNetworking */,
 				B2A3C49415FE847E00D62B5F /* drupal-ios-sdk */,
 				B23D763A15F3ADDA0058F74C /* CoreText.framework */,
@@ -212,22 +214,21 @@
 		B23D761715F3AC370058F74C /* Core Text */ = {
 			isa = PBXGroup;
 			children = (
+				80B0015616A4B03900EF3E8C /* ctlmstyles.plist */,
 				B23D763315F3AD490058F74C /* UIColor-Expanded.m */,
 				B23D763415F3AD490058F74C /* UIColor-Expanded.h */,
-				B23D761815F3AC370058F74C /* CTCell.h */,
-				B23D761915F3AC370058F74C /* CTCell.m */,
-				B23D761A15F3AC370058F74C /* CTConstants.h */,
-				B23D761B15F3AC370058F74C /* CTItem.h */,
-				B23D761C15F3AC370058F74C /* CTItem.m */,
-				B23F8B3315FBD704002648DF /* CTRenderer.h */,
-				B23D761E15F3AC370058F74C /* CTRenderer.m */,
-				B23D761F15F3AC370058F74C /* CTPage.h */,
-				B23D762015F3AC370058F74C /* CTPage.m */,
-				B23D762115F3AC370058F74C /* CTStyle.h */,
-				B23D762215F3AC370058F74C /* CTStyle.m */,
-				B23D762315F3AC370058F74C /* ctstyles.plist */,
-				B23D762415F3AC370058F74C /* CTStylesManager.h */,
-				B23D762515F3AC370058F74C /* CTStylesManager.m */,
+				B23D761815F3AC370058F74C /* CTLMCell.h */,
+				B23D761915F3AC370058F74C /* CTLMCell.m */,
+				B23D761B15F3AC370058F74C /* CTLMItem.h */,
+				B23D761C15F3AC370058F74C /* CTLMItem.m */,
+				B23F8B3315FBD704002648DF /* CTLMRenderer.h */,
+				B23D761E15F3AC370058F74C /* CTLMRenderer.m */,
+				B23D761F15F3AC370058F74C /* CTLMPage.h */,
+				B23D762015F3AC370058F74C /* CTLMPage.m */,
+				B23D762115F3AC370058F74C /* CTLMStyle.h */,
+				B23D762215F3AC370058F74C /* CTLMStyle.m */,
+				B23D762415F3AC370058F74C /* CTLMStylesManager.h */,
+				B23D762515F3AC370058F74C /* CTLMStylesManager.m */,
 				B23F8B3415FBDAD7002648DF /* CTImageRenderingLookup.h */,
 			);
 			path = "Core Text";
@@ -341,7 +342,6 @@
 				B23D760515F3AC240058F74C /* InfoPlist.strings in Resources */,
 				B23D761115F3AC250058F74C /* ViewController.xib in Resources */,
 				B2BA56E215F536290016BD16 /* marta.jpg in Resources */,
-				B236DB8C15F7F0DD00F4435B /* ctstyles.plist in Resources */,
 				B23F8B3C15FC0155002648DF /* btf.png in Resources */,
 				B23F8B3E15FC01AD002648DF /* abstract.png in Resources */,
 				B2A3C4AD15FE847E00D62B5F /* LICENSE in Resources */,
@@ -349,6 +349,8 @@
 				80E62FE1165E71360033FA76 /* GarageGothic-Bold.ttf in Resources */,
 				80E62FE2165E71360033FA76 /* SignaColumn-Book.ttf in Resources */,
 				80E62FE3165E71360033FA76 /* SignaColumn-Light.ttf in Resources */,
+				80B0015716A4B03900EF3E8C /* ctlmstyles.plist in Resources */,
+				80B0015916A4B0A600EF3E8C /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,12 +364,12 @@
 				B23D760715F3AC240058F74C /* main.m in Sources */,
 				B23D760B15F3AC250058F74C /* AppDelegate.m in Sources */,
 				B23D760E15F3AC250058F74C /* ViewController.m in Sources */,
-				B23D762815F3AC370058F74C /* CTCell.m in Sources */,
-				B23D762915F3AC370058F74C /* CTItem.m in Sources */,
-				B23D762A15F3AC370058F74C /* CTRenderer.m in Sources */,
-				B23D762B15F3AC370058F74C /* CTPage.m in Sources */,
-				B23D762C15F3AC370058F74C /* CTStyle.m in Sources */,
-				B23D762E15F3AC370058F74C /* CTStylesManager.m in Sources */,
+				B23D762815F3AC370058F74C /* CTLMCell.m in Sources */,
+				B23D762915F3AC370058F74C /* CTLMItem.m in Sources */,
+				B23D762A15F3AC370058F74C /* CTLMRenderer.m in Sources */,
+				B23D762B15F3AC370058F74C /* CTLMPage.m in Sources */,
+				B23D762C15F3AC370058F74C /* CTLMStyle.m in Sources */,
+				B23D762E15F3AC370058F74C /* CTLMStylesManager.m in Sources */,
 				B23D763515F3AD490058F74C /* UIColor-Expanded.m in Sources */,
 				B2A3C4A615FE847E00D62B5F /* DIOSComment.m in Sources */,
 				B2A3C4A715FE847E00D62B5F /* DIOSFile.m in Sources */,

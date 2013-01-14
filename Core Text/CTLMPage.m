@@ -6,10 +6,10 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "CTPage.h"
-#import "CTItem.h"
+#import "CTLMPage.h"
+#import "CTLMItem.h"
 
-@implementation CTPage
+@implementation CTLMPage
 
 
 @synthesize frame;
