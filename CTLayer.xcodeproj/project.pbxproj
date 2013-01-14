@@ -23,7 +23,6 @@
 		B23D762815F3AC370058F74C /* CTLMCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D761915F3AC370058F74C /* CTLMCell.m */; };
 		B23D762915F3AC370058F74C /* CTLMItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D761C15F3AC370058F74C /* CTLMItem.m */; };
 		B23D762A15F3AC370058F74C /* CTLMRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D761E15F3AC370058F74C /* CTLMRenderer.m */; };
-		B23D762B15F3AC370058F74C /* CTLMPage.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D762015F3AC370058F74C /* CTLMPage.m */; };
 		B23D762C15F3AC370058F74C /* CTLMStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D762215F3AC370058F74C /* CTLMStyle.m */; };
 		B23D762E15F3AC370058F74C /* CTLMStylesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D762515F3AC370058F74C /* CTLMStylesManager.m */; };
 		B23D763515F3AD490058F74C /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D763315F3AD490058F74C /* UIColor-Expanded.m */; };
@@ -77,8 +76,6 @@
 		B23D761B15F3AC370058F74C /* CTLMItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTLMItem.h; sourceTree = "<group>"; };
 		B23D761C15F3AC370058F74C /* CTLMItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTLMItem.m; sourceTree = "<group>"; };
 		B23D761E15F3AC370058F74C /* CTLMRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTLMRenderer.m; sourceTree = "<group>"; };
-		B23D761F15F3AC370058F74C /* CTLMPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTLMPage.h; sourceTree = "<group>"; };
-		B23D762015F3AC370058F74C /* CTLMPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTLMPage.m; sourceTree = "<group>"; };
 		B23D762115F3AC370058F74C /* CTLMStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTLMStyle.h; sourceTree = "<group>"; };
 		B23D762215F3AC370058F74C /* CTLMStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTLMStyle.m; sourceTree = "<group>"; };
 		B23D762415F3AC370058F74C /* CTLMStylesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTLMStylesManager.h; sourceTree = "<group>"; };
@@ -223,8 +220,6 @@
 				B23D761C15F3AC370058F74C /* CTLMItem.m */,
 				B23F8B3315FBD704002648DF /* CTLMRenderer.h */,
 				B23D761E15F3AC370058F74C /* CTLMRenderer.m */,
-				B23D761F15F3AC370058F74C /* CTLMPage.h */,
-				B23D762015F3AC370058F74C /* CTLMPage.m */,
 				B23D762115F3AC370058F74C /* CTLMStyle.h */,
 				B23D762215F3AC370058F74C /* CTLMStyle.m */,
 				B23D762415F3AC370058F74C /* CTLMStylesManager.h */,
@@ -367,7 +362,6 @@
 				B23D762815F3AC370058F74C /* CTLMCell.m in Sources */,
 				B23D762915F3AC370058F74C /* CTLMItem.m in Sources */,
 				B23D762A15F3AC370058F74C /* CTLMRenderer.m in Sources */,
-				B23D762B15F3AC370058F74C /* CTLMPage.m in Sources */,
 				B23D762C15F3AC370058F74C /* CTLMStyle.m in Sources */,
 				B23D762E15F3AC370058F74C /* CTLMStylesManager.m in Sources */,
 				B23D763515F3AD490058F74C /* UIColor-Expanded.m in Sources */,
